@@ -1,0 +1,28 @@
+GET http://localhost:3000/product
+
+###
+// get single data
+GET http://localhost:3000/product/61f15ac09cbc89f079af054f
+
+###
+// create data
+POST http://localhost:3000/product
+Content-Type: application/json
+
+{
+   "title": "new product 2",
+   "price": 5005
+}
+
+###
+// update data
+PATCH http://localhost:3000/product/61f15ac09cbc89f079af054f
+Content-Type: application/json
+
+{
+   "title": "new product 2 updated",
+   "price": 5500
+}
+
+###
+DELETE http://localhost:3000/product/61f15ac09cbc89f079af054f
